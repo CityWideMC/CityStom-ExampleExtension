@@ -1,7 +1,15 @@
 package me.heroostech.exampleextension;
 
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+import me.heroostech.cityengine.extension.Extension;
+
+public class ExampleExtension extends Extension {
+    @Override
+    public void initialize() {
+
+    }
+
+    @Override
+    public void terminate() {
+
     }
 }

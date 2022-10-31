@@ -3,17 +3,15 @@ plugins {
 }
 
 group = "me.heroostech.exampleextension"
-version = "1.0-SNAPSHOT"
+version = "v1.0.0"
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
-}
-
-tasks.getByName<Test>("test") {
-    useJUnitPlatform()
+    compileOnly(libs.cityengine)
+    compileOnly(libs.lombok)
+    annotationProcessor(libs.lombok)
 }
