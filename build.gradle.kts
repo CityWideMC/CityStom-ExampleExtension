@@ -6,12 +6,11 @@ group = "me.heroostech.exampleextension"
 version = "v1.0.0"
 
 repositories {
-    mavenCentral()
-    mavenLocal()
+    maven("https://jitpack.io")
 }
 
 dependencies {
-    compileOnly(libs.cityengine)
+    compileOnly(libs.minestom)
     compileOnly(libs.lombok)
     annotationProcessor(libs.lombok)
 }

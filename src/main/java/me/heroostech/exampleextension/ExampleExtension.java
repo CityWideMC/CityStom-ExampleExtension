@@ -1,6 +1,6 @@
 package me.heroostech.exampleextension;
 
-import me.heroostech.cityengine.extension.Extension;
+import net.minestom.server.extensions.Extension;
 
 public class ExampleExtension extends Extension {
     @Override
