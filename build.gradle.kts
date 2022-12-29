@@ -1,20 +1,18 @@
 plugins {
     id("java")
-    id ("com.github.johnrengelman.shadow") version "7.1.0"
 }
 
-group = "me.heroostech.exampleextension"
+group = "xyz.citywide.exampleextension"
 version = "v1.0.0"
 
 repositories {
     mavenCentral()
-    mavenLocal()
     maven("https://jitpack.io")
 }
 
 dependencies {
-    compileOnly(libs.minestom)
-    implementation(libs.citystom)
-    compileOnly(libs.lombok)
-    annotationProcessor(libs.lombok)
+    compileOnly("com.github.Minestom:Minestom:91a344aa92")
+    compileOnly("com.github.CityWideMC:CityStom:8f9625559f")
+    compileOnly("org.projectlombok:lombok:1.18.24")
+    annotationProcessor("org.projectlombok:lombok:1.18.24")
 }

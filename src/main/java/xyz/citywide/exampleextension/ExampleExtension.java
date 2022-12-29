@@ -1,6 +1,6 @@
-package me.heroostech.exampleextension;
+package xyz.citywide.exampleextension;
 
-import me.heroostech.citystom.Extension;
+import xyz.citywide.citystom.Extension;
 
 public class ExampleExtension extends Extension {
     @Override

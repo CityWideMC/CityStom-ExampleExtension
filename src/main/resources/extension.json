@@ -1,8 +1,13 @@
 {
-  "entrypoint": "me.heroostech.exampleextension.ExampleExtension",
+  "entrypoint": "xyz.citywide.exampleextension.ExampleExtension",
   "name": "example",
-  "version": "v1.0.0",
-  "dependencies": [
-    "minestomfloodgate"
-  ]
+  "version": "1.0",
+  "externalDependencies": {
+    "repositories": [
+      {"name": "jitpack", "url": "https://jitpack.io" }
+    ],
+    "artifacts": [
+      "com.github.CityWideMC:CityStom:8f9625559f"
+    ]
+  }
 }
